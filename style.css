@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: "Merriweather", serif;
+}
+
+.home {
+    background-color: #f4df4eff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 73px;
+}
+
+.about {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-title {
+    color: #f4df4eff;
+    font-weight: bolder;
+}
+
+.skills p {
+    font-size: 12px;
+}
+
+.certs {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container {
+    margin-top: 40px;
+}
+
+.projects-container .logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #89878f;
+    margin-bottom: 20px;
+}
+
+.projects-container .logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projects-container .clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p,
+h3 {
+    color: #89878f;
+}
+
+.contact-container {
+    margin-top: 30px;
+}
+
+.personal-container-col,
+.contact-container-col {
+    margin-bottom: 10px;
+}
+
+.personal-info,
+.contact-info {
+    background-color: white;
+    height: 100%;
+    border: 1px solid #f4df4eff;
+}
+
+.personal-info-header,
+.contact-info-header {
+    background-color: #f4df4eff;
+    padding: 5px;
+}
+
+.personal-info-body,
+.contact-info-body {
+    padding: 10px;
+}
+
+.footer {
+    background-color: #89878f;
+    height: 150px;
+}
+
+.footer p {
+    color: #f4df4eff;
+}
+
+.field-name {
+    font-weight: bolder;
+}
+
+.intro {
+    text-align: center;
+    width: 60%;
+}
+
+.about * {
+    margin-bottom: 60px;
+}
+
+.my-name {
+    font-family: "Jersey 15", sans-serif;
+    color: #89878f;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+}
+
+h2,
+h6 {
+    color: #89878f;
+}
+
+.c1 {
+    text-align: center;
+}
+
+.pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.boy-programming-pic {
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    background-color: #f4df4eff;
+}
+
+.navbar-brand {
+    padding-left: 25px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boy-programming-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+@keyframes blink {
+    50% {
+        color: transparent;
+    }
+}
+
+.loader__dot {
+    animation: 1s blink infinite;
+}
+
+.loader__dot:nth-child(2) {
+    animation-delay: 250ms;
+}
+
+.loader__dot:nth-child(3) {
+    animation-delay: 500ms;
+}
+
+.navbar {
+    background-color: #f4df4eff;
+}
+
+.navbar-nav {
+    padding-left: 25px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.cert-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.cert-img img {
+    height: 150px;
+}
+
+.cert-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+
+.cert-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.certs a {
+    color: #89878f;
+}
+
+.issuer {
+    color: #89878f;
+    font-weight: bold;
+}
+
+.page-title {
+    margin-top: 100px;
+}
+
+
+
+
+.hero * {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 100px;
+    margin-top: -100px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    background: #F4DF4EFF;
+    color: #89878f;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.social-links a .fab {
+    font-size: 30px;
+    line-height: 55px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+.social-links a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: #000;
+    background: linear-gradient(-45deg, #89878f, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.social-links a:hover::after {
+    top: 0;
+}
+
+.social-links a:hover .fab {
+    color: #fff;
+}
+
+.social-links a:hover {
+    transform: translateY(-10px);
+}
