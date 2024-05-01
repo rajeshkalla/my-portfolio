@@ -301,6 +301,7 @@ h1 {
 
 .social-links {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .social-links a {
@@ -311,7 +312,7 @@ h1 {
     background: #F4DF4EFF;
     color: #89878f;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
-    margin: 0 30px;
+    margin: 15px 30px;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
