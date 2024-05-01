@@ -1,48 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Three Images Carousel</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rajesh K</title>
+      <!-- bootstrap 5 css -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+         crossorigin="anonymous"
+         />
+      <!-- BOX ICONS CSS-->
+      <link
+         href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+         rel="stylesheet"
+         />
+      <!-- custom css -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Sacramento&amp;display=swap"
+         rel="stylesheet"
+         />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+         />
+   </head>
+   <body>
+      <script>
+        function isElementInViewport(elem) {
+          var $elem = $(elem);
+          var windowTop = $(window).scrollTop();
+          var windowBottom = windowTop + $(window).height();
+          var elemTop = $elem.offset().top;
+          var elemBottom = elemTop + $elem.height();
+          return ((elemBottom <= windowBottom) && (elemTop >= windowTop));
+      }
 
-  </head>
-  <body>
-    <div class="fluid-container hero">
-      <div class="social-links" ">
-         <a
-            href="https://www.linkedin.com/in/rajesh-kalla/"
-            target="_blank"
-            ><i class="fab fa-linkedin-in"></i
-            ></a>
-         <a href="https://github.com/rajeshkalla" target="_blank"
-            ><i class="fab fa-github"></i
-            ></a>
-         <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
-         <a
-            href="https://www.instagram.com/rajeshkalla00?igsh=ZDg1NXp5YWhzdmU3"
-            target="_blank"
-            ><i class="fab fa-instagram"></i
-            ></a>
-         <a
-            href="https://www.instagram.com/rajeshkalla00?igsh=ZDg1NXp5YWhzdmU3"
-            target="_blank"
-            ><i class="fab fa-facebook-f"></i
-            ></a>
-      </div>
-   </div>
+        function closeMenu() {
+          var NavButton = $(".navbar-toggler");
+          var isShown = isElementInViewport(NavButton);
+          if(isShown) {
+            NavButton.click();
+          }
+        }
 
+      </script>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+         <a class="navbar-brand" href="#">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+               fill="#1C2033"
+               width="52"
+               height="52"
+               version="1.1"
+               id="lni_lni-code"
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               x="0px"
+               y="0px"
+               viewBox="0 0 64 64"
+               style="enable-background: new 0 0 64 64"
+               xml:space="preserve"
+               >
+               <g>
+                  <path
+                     d="M19.6,14.1c-0.9-0.8-2.4-0.7-3.2,0.2L2.6,29.9c-1.1,1.2-1.1,3.1,0,4.3l13.9,15.6c0.4,0.5,1.1,0.8,1.7,0.8
+                     c0.5,0,1.1-0.2,1.5-0.6c0.9-0.8,1-2.3,0.2-3.2L6.7,32l13.1-14.7C20.7,16.3,20.6,14.9,19.6,14.1z"
+                     />
+                  <path
+                     d="M61.4,29.9L47.5,14.3c-0.8-0.9-2.2-1-3.2-0.2s-1,2.2-0.2,3.2L57.3,32L44.2,46.7c-0.8,0.9-0.7,2.3,0.2,3.2
+                     c0.4,0.4,1,0.6,1.5,0.6c0.6,0,1.2-0.3,1.7-0.8l13.9-15.6C62.5,32.9,62.5,31.1,61.4,29.9z"
+                     />
+                  <path
+                     d="M37.9,14.4c-1.2-0.4-2.5,0.2-2.8,1.4L24.7,46.7c-0.4,1.2,0.2,2.5,1.4,2.8c0.2,0.1,0.5,0.1,0.7,0.1c0.9,0,1.8-0.6,2.1-1.5
+                     l10.3-30.9C39.7,16.1,39.1,14.8,37.9,14.4z"
+                     />
+               </g>
+            </svg>
+         </a>
+         <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+               <a class="nav-item nav-link" href="#home" onclick="closeMenu()">Home</a>
+               <a class="nav-item nav-link" href="#about"  onclick="closeMenu()">About</a>
+               <a class="nav-item nav-link" href="#skills"  onclick="closeMenu()">Skills</a>
+               <a class="nav-item nav-link" href="#certs"  onclick="closeMenu()">Certifications</a>
+               <a class="nav-item nav-link" href="#projects"  onclick="closeMenu()">Projects/Clients</a>
+               <a class="nav-item nav-link" href="#contact"  onclick="closeMenu()">Get In Touch</a>
+            </div>
+         </div>
+      </nav>
+      <section id="home">
+         <div class="col-12 home">
+            <div class="pic">
+               <img src="./images/pass-photo.JPG" />
+            </div>
+            <div class="c1">
+               <h1 class="my-name">I am Rajesh Kalla</h1>
+               <h2>an application developer<span class="loader__dot">_</span></h2>
+            </div>
+         </div>
+      </section>
+      <section id="about">
+         <div class="col-12 about">
+            <div class="boy-programming-pic">
+               <img src="./images/boy_programming.png" />
+            </div>
+            <h2 style="color: #f4df4eff">Hello.</h2>
+            <div class="intro">
+               <p>
+                  I am an IBM Digital Automation specialist, Java Fullstack developer,
+                  web developer and a certified OKTA developer. Quick learner and
+                  flexible enough to learn & work on any technology on demand. <br />
+                  I ❤️ to explore new technologies.
+               </p>
+            </div>
+         </div>
+      </section>
+      <section id="skills">
+         <div class="col-12 skills">
+            <h2 class="page-title">My Skills</h2>
+            <section class="py-5 py-xl-5">
+               <div class="container overflow-hidden">
+                  <div
+                     class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center"
+                     >
+                     <div class="col-11 col-lg-4">
+                        <h4 class="mb-3 skill-title">IBM FileNet</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0">
+                           <li>
+                              <p class="text-secondary">
+                                 Design and implementaion of Document Management Systems.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Custom documents approval workflows.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">Bulk migration tools.</p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Extending & customizing Navigator.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Third party integration through APIs & other mediums.
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-11 col-lg-4">
+                        <h4 class="mb-3 skill-title">IBM BPM</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0">
+                           <li>
+                              <p class="text-secondary">
+                                 Automating business processes with IBM BPM.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Designing business processes definitions.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Coach and CoachView implementations.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Third party integtaions with APIs.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 BPM Portal look & feelcustomization.
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-11 col-lg-4">
+                        <h4 class="mb-3 skill-title">IBM Records Manager</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0">
+                           <li>
+                              <p class="text-secondary">
+                                 Design and implementation of records management system.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">Creating fileplans.</p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Creating disposition policies and schedules.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Automating the process of records declaration.
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <br />
+                  <div class="row gy-5 gx-md-4 gy-lg-0 gx-xxl-5 justify-content-center">
+                     <div class="col-11 col-lg-4">
+                        <h4 class="mb-3 skill-title">IBM ODM</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0">
+                           <li>
+                              <p class="text-secondary">
+                                 Design and implementaion of ODM rules.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Creating rules in the Rule Designer.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Deployment of Rules in rule execution server.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Importing the rules in Decission Center for production.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Third party integration through APIs & other mediums.
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-11 col-lg-4">
+                        <h4 class="mb-3 skill-title">Java fullstack</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0">
+                           <li>
+                              <p class="text-secondary">
+                                 Creating static and web applications using Java, JSP,
+                                 Spring.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Implentaion of Rest APIs using Spring Rest.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Web development using HTML, css, bootstrap, JS.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Development of Single Page application using React and
+                                 Angular.
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-11 col-lg-4">
+                        <h4 class="mb-3 skill-title">OKTA</h4>
+                        <ul style="list-style: none; padding: 0; margin: 0">
+                           <li>
+                              <p class="text-secondary">
+                                 Manage user access and permissions.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Configure SSO for applications, MFA solutions
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Develop custom integrations with OKTA APIs.
+                              </p>
+                           </li>
+                           <li>
+                              <p class="text-secondary">
+                                 Monitor system performance & security. Troubleshoot and
+                                 debug OKTA configurations.
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </section>
+      <section id="certs">
+         <div class="col-12 certs">
+            <h2 class="page-title">Certifications</h2>
+            <div class="container">
+               <div class="row" style="margin-bottom: 50px">
+                  <div class="col-11 col-lg-4 item">
+                     <div class="cert-img">
+                        <img src="./images/cert-images/okta-certified-professional.png" />
+                     </div>
+                     <div class="cert-content">
+                        <div class="cert-name">
+                           <a
+                              href="https://www.credly.com/badges/cd926f73-6992-4bd9-8771-af8f24c1e492/public_url"
+                              target="_blank"
+                              >
+                              <p>Okta Certified Professional</p>
+                           </a
+                              >
+                        </div>
+                        <div class="company">
+                           <span class="issuer">OKTA</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-11 col-lg-4 item">
+                     <div class="cert-img">
+                        <img src="./images/cert-images/okta-certified-administrator.png" />
+                     </div>
+                     <div class="cert-content">
+                        <div class="cert-name">
+                           <a
+                              href="https://www.credly.com/badges/9fed7c34-4adf-4c83-a32c-a5ed74e1bf74/public_url"
+                              target="_blank"
+                              >
+                              <p>Okta Certified Administrator</p>
+                           </a
+                              >
+                        </div>
+                        <div class="company">
+                           <span class="issuer">OKTA</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-11 col-lg-4 item">
+                     <div class="cert-img">
+                        <img
+                           src="./images/cert-images/ibm-business-automation-workflow-v20-developer.png"
+                           />
+                     </div>
+                     <div class="cert-content">
+                        <div class="cert-name">
+                           <a
+                              href="https://www.credly.com/badges/d07ad054-2c1a-4cdf-8a2a-b82cf240c337/public_url"
+                              target="_blank"
+                              >
+                              <p>IBM Business Automation Workflow V20 Developer</p>
+                           </a
+                              >
+                        </div>
+                        <div class="company">
+                           <span class="issuer">IBM</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-11 col-lg-4 item">
+                     <div class="cert-img">
+                        <img
+                           src="./images/cert-images/ibm-content-navigator-v3-0-6-administration.png"
+                           />
+                     </div>
+                     <div class="cert-content">
+                        <div class="cert-name">
+                           <a
+                              href="https://www.credly.com/badges/9fed7c34-4adf-4c83-a32c-a5ed74e1bf74/public_url"
+                              target="_blank"
+                              >
+                              <p>IBM Content Navigator V3.0.6 - Administration</p>
+                           </a
+                              >
+                        </div>
+                        <div class="company">
+                           <span class="issuer">IBM</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-11 col-lg-4 item">
+                     <div class="cert-img">
+                        <img
+                           src="./images/cert-images/ibm-business-process-manager-standard-v8-5-7-developer.png"
+                           />
+                     </div>
+                     <div class="cert-content">
+                        <div class="cert-name">
+                           <a
+                              href="https://www.credly.com/badges/605c988e-b23c-4a10-85b0-fc809c9bf12f/public_url"
+                              target="_blank"
+                              >
+                              <p>
+                                 IBM Business Process Manager Standard V8.5.7 Developer
+                              </p>
+                           </a
+                              >
+                        </div>
+                        <div class="company">
+                           <span class="issuer">IBM</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-11 col-lg-4 item">
+                     <div class="cert-img">
+                        <img
+                           src="./images/cert-images/enterprise-design-thinking-practitioner.png"
+                           />
+                     </div>
+                     <div class="cert-content">
+                        <div class="cert-name">
+                           <a
+                              href="https://www.credly.com/badges/87b3d493-7a88-43fe-82a4-fb61a7f2aeaa/public_url"
+                              target="_blank"
+                              >
+                              <p>Enterprise Design Thinking Practitioner</p>
+                           </a
+                              >
+                        </div>
+                        <div class="company">
+                           <span class="issuer">IBM</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="projects">
+         <div class="col-12 projects">
+            <h2 class="page-title">Projects / Clients</h2>
+            <div class="container projects-container">
+               <div class="row">
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/batelco.png" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/beejakPay.jpeg" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/DHA.png" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/dr_reddys.png" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/k_raheja.png" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/ntpc.png" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/seamex.jpeg" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/sohar.png" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/ultratech.png" />
+                     </div>
+                  </div>
+                  <div class="col-11 col-md-6 col-lg-4">
+                     <div class="logo">
+                        <img src="./images/client-logos/VI.jpeg" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contact">
+         <div class="col-12 contact">
+            <h2 class="page-title">Get In Touch</h2>
+            <div class="container contact-container" >
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 col-11 personal-container-col">
+                     <div class="personal-info" >
+                        <div class="personal-info-header" >
+                           <h3>Personal Info</h3>
+                        </div>
+                        <div class="personal-info-body" >
+                           <p>
+                              <span class="field-name">Name: </span>Sai Venkata Rajesh
+                              Kalla
+                           </p>
+                           <p>
+                              <span class="field-name">Date of birth: </span>11th July,
+                              1995
+                           </p>
+                           <p><span class="field-name">Nationality: </span>Indian</p>
+                           <p>
+                              <span class="field-name">Languages </span>English, Hindi,
+                              Telugu
+                           </p>
+                           <p>
+                              <span class="field-name">Designation: </span>System Analyst
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="col-lg-6 col-md-6 col-11 contact-container-col">
+                     <div class="contact-info" >
+                        <div class="contact-info-header" >
+                           <h3>Contact Details</h3>
+                        </div>
+                        <div class="contact-info-body" >
+                           <p>
+                              <span class="field-name">Adress: </span>Hanuman Nagar,
+                              Kondapur, Hyderabad
+                           </p>
+                           <p><span class="field-name">State: </span>Telangana</p>
+                           <p><span class="field-name">Country: </span>India</p>
+                           <p><span class="field-name">Pin Code: </span>500084</p>
+                           <p>
+                              <span class="field-name">Mobile No: </span>+91 7780345681
+                           </p>
+                           <p>
+                              <span class="field-name">Email Adress: </span
+                                 >rajeshkalla308@gmail.com
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="fluid-container hero">
+              <div class="social-links">
+                 <a
+                    href="https://www.linkedin.com/in/rajesh-kalla/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                 <a href="https://github.com/rajeshkalla" target="_blank"
+                    ><i class="fab fa-github"></i
+                    ></a>
+                 <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                 <a
+                    href="https://www.instagram.com/rajeshkalla00?igsh=ZDg1NXp5YWhzdmU3"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+                 <a
+                    href="https://www.instagram.com/rajeshkalla00?igsh=ZDg1NXp5YWhzdmU3"
+                    target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+              </div>
+           </div>
+         </div>
+         <div class="fluid-container footer">
+            <footer class="py-3 my-4">
+               <p class="text-center">
+                  © 2024, rajeshKalla308@gmail.com, All rights reserved.
+               </p>
+            </footer>
+         </div>
+      </section>
 
-  </body>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <script>
+        $(document).ready(function () {
+        // Function to highlight the current nav link based on scroll position
+        function highlightNavLinks() {
+          var scrollPos = $(document).scrollTop();
+
+          $("section").each(function () {
+            var top = $(this).offset().top - $(".navbar").height(); // Adjusted for navbar height
+            var bottom = top + $(this).outerHeight();
+
+            if (scrollPos >= top && scrollPos <= bottom) {
+              var sectionId = $(this).attr("id");
+              $(".nav-link").removeClass("active");
+              $('a[href="#' + sectionId + '"]').addClass("active");
+            }
+          });
+        }
+        // Highlight nav links on page load and scroll
+        highlightNavLinks();
+        $(window).scroll(function () {
+          highlightNavLinks();
+        });
+      });
+      </script>
+   </body>
 </html>
